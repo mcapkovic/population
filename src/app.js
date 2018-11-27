@@ -50,7 +50,7 @@ class App extends Component {
       if (last5Results.length > 5){last5Results.shift()}
 
       formStateUpdate.error = ''
-      this.setState({form: formStateUpdate, lifeExpectancy: response.data.remaining_life_expectancy, calcHistory: last5Results});
+      this.setState({form: formStateUpdate, lifeExpectancy: response.data.remaining_life_expectancy.toFixed(2), calcHistory: last5Results});
       localStorage.setItem('history', JSON.stringify(last5Results));
 
     } catch (error){
