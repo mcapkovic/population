@@ -6,9 +6,49 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+ul {
+  list-style-type: none;
+  margin-left: -50px;
+}
+
+.populationTable, 
+.populationChart,
+.calcContainer {
+  margin: 100px auto 0 auto;
+  width: 600px;
+}
+
+.tableH1{
+  margin-bottom: 30px;
+}
+
+.calcContainer h1,
+.populationChart h1,
+.populationTable h1{
+  text-transform: uppercase;
+}
+.calcContainer h2 {
+  margin-bottom: 30px;
+}
+
+.scale-in-hor-center{
+  -webkit-animation:scale-in-hor-center .5s cubic-bezier(.25,.46,.45,.94) both;
+  animation:scale-in-hor-center .5s cubic-bezier(.25,.46,.45,.94) both;
+}
+
+@-webkit-keyframes scale-in-hor-center{
+  0%{-webkit-transform:scaleX(0);transform:scaleX(0);opacity:1}
+  100%{-webkit-transform:scaleX(1);transform:scaleX(1);opacity:1}
+}
+  @keyframes scale-in-hor-center{
+    0%{-webkit-transform:scaleX(0);transform:scaleX(0);opacity:1}
+    100%{-webkit-transform:scaleX(1);transform:scaleX(1);opacity:1}
+  }
